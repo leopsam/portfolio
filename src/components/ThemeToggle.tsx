@@ -1,6 +1,7 @@
 'use client'
 import styled from 'styled-components'
 import React, { useEffect, useState } from 'react'
+import { Moon, Sun } from 'lucide-react'
 
 export default function ThemeToggle() {
   const [isDarkTheme, setIsDarkTheme] = useState(false)
@@ -20,13 +21,43 @@ export default function ThemeToggle() {
   }
 
   return (
-    <Button onClick={toggleTheme}>{theme === 'light' ? '🌙' : '☀️'}</Button>
+    <Rail onClick={toggleTheme}>
+      <Indicator variant={theme === 'light' ? 'dark' : 'light'}>
+        <Icon>{theme === 'light' ? <Sun /> : <Moon />}</Icon>
+      </Indicator>
+    </Rail>
   )
 }
+interface IndicatorProps {
+  variant?: 'dark' | 'light'
+}
 
-const Button = styled.button`
-  background: none;
-  border: none;
+const Rail = styled.div`
+  width: 50px;
+  height: 23px;
+  background-color: var(--color-background);
+  border-radius: 50px;
+  position: relative;
   cursor: pointer;
-  font-size: 1.5rem;
+`
+const Indicator = styled.div<IndicatorProps>`
+  width: 23px;
+  height: 23px;
+  background-color: ${props => (props.variant === 'dark' ? 'black' : 'gray')};
+  left: ${props => (props.variant === 'dark' ? 27 : 0)}px;
+  transition: 0.5s;
+  border-radius: 50%;
+  transform: scale(0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+`
+const Icon = styled.div`
+  width: 19px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
 `

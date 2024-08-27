@@ -59,7 +59,7 @@ const Menu = styled.ul`
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  width: 480px;
+  width: 500px;
 `
 const Link = styled.a`
   text-decoration: none;
