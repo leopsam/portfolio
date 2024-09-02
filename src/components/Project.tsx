@@ -3,18 +3,17 @@ import styled from 'styled-components'
 import Image from 'next/image'
 import site from './../../public/images/image.png'
 import { useEffect } from 'react'
-import ScrollReveal from 'scrollreveal' // Linha adicionada
+import ScrollReveal from 'scrollreveal'
 
 export function Project() {
   useEffect(() => {
-    // Configuração do ScrollReveal
     ScrollReveal().reveal('.reveal', {
-      origin: 'bottom', // Define a origem da animação
-      distance: '50px', // Distância que o elemento vai se mover
-      duration: 2000, // Duração da animação
-      easing: 'ease-out', // Tipo de easing da animação
-      opacity: 0, // Opacidade inicial
-      reset: true, // Se a animação deve ser repetida toda vez que o elemento entra na visualização
+      origin: 'bottom',
+      distance: '50px',
+      duration: 2000,
+      easing: 'ease-out',
+      opacity: 0,
+      reset: true,
     })
   }, [])
   return (
