@@ -1,6 +1,7 @@
 'use client'
 import styled from 'styled-components'
 import ThemeToggle from '@/components/ThemeToggle'
+import { Link } from '../components/Link'
 
 export function Header() {
   return (
@@ -60,8 +61,4 @@ const Menu = styled.ul`
   align-items: center;
   list-style: none;
   width: 500px;
-`
-const Link = styled.a`
-  text-decoration: none;
-  color: #a0a0a0;
 `

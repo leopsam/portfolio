@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Image from 'next/image'
 import photo from './../../public/images/photo.png'
 import ScrollReveal from 'scrollreveal'
-import { Moon } from 'lucide-react'
+import { Linkedin, Github, Instagram, Mail } from 'lucide-react'
 
 export function Banner() {
   useEffect(() => {
@@ -51,10 +51,16 @@ export function Banner() {
         <Button>Curriculun Vitae pdf</Button>
         <Social>
           <Icon>
-            <Moon />
+            <Linkedin />
           </Icon>
           <Icon>
-            <Moon />
+            <Github />
+          </Icon>
+          <Icon>
+            <Instagram />
+          </Icon>
+          <Icon>
+            <Mail />
           </Icon>
         </Social>
       </Container>
@@ -74,27 +80,37 @@ const Icon = styled.div`
   justify-content: center;
   align-items: center;
   color: var(--color-text-primary);
-  background-color: red;
+  &:hover {
+    color: var(--color-theme);
+    cursor: pointer;
+  }
+  &:active {
+    color: var(--color-text-secondary);
+  }
 `
-
 const Social = styled.div`
-  margin: 10px 0;
   height: 60px;
   width: 550px;
   color: #ffffff;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: var(--color-theme);
 `
 const Button = styled.button`
-  margin: 10px 0;
+  margin: 15px 0;
   height: 40px;
   width: 150px;
   border: none;
   color: #ffffff;
   border-radius: 40px;
   background-color: var(--color-theme);
+  &:hover {
+    background-color: var(--color-text-secondary);
+    cursor: pointer;
+  }
+  &:active {
+    background-color: var(--color-theme);
+  }
 `
 const BodyBanner = styled.div`
   height: 100vh;

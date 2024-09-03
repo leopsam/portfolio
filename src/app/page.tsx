@@ -1,8 +1,8 @@
-import { Academic } from '@/components/Academic'
-import { Banner } from '@/components/Banner'
-import { Header } from '@/components/Header'
-import { Project } from '@/components/Project'
-import { Stacks } from '@/components/Stacks'
+import { Academic } from '@/Pages/Academic'
+import { Banner } from '@/Pages/Banner'
+import { Header } from '@/Pages/Header'
+import { Project } from '@/Pages/Project'
+import { Stacks } from '@/Pages/Stacks'
 
 export default function Home() {
   return (
