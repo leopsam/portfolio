@@ -1,31 +1,32 @@
 'use client'
 import styled from 'styled-components'
 import ThemeToggle from '@/components/ThemeToggle'
-import { Link } from '../components/Link'
+import Link from 'next/link'
 
-export function Header() {
+export default function Header() {
   return (
     <header>
       <Nav>
         <Logo href="/">&lt;leonardo.sampaio/&gt;</Logo>
         <Menu>
           <li>
-            <Link href="#about">Sobre Mim</Link>
+            <StyledLink href="#about">Sobre Mim</StyledLink>
           </li>
           <li>
-            <Link href="#projects">Projetos</Link>
+            <StyledLink href="#projects">Projetos</StyledLink>
           </li>
           <li>
-            <Link href="#stacks">Habilidades</Link>
+            <StyledLink href="#stacks">Habilidades</StyledLink>
+          </li>
+          {/* 
+          <li>
+            <StyledLink href="#training">Formação</StyledLink>
           </li>
           <li>
-            <Link href="#training">Formação</Link>
-          </li>
+            <StyledLink href="#experience">Experiência</StyledLink>
+          </li>*/}
           <li>
-            <Link href="#experience">Experiência</Link>
-          </li>
-          <li>
-            <Link href="#contact">Contato</Link>
+            <StyledLink href="#contact">Contato</StyledLink>
           </li>
           <ThemeToggle />
         </Menu>
@@ -34,6 +35,17 @@ export function Header() {
   )
 }
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #a0a0a0;
+  &:hover {
+    color: var(--color-theme);
+    cursor: pointer;
+  }
+  &:active {
+    color: var(--color-text-secondary);
+  }
+`
 const Nav = styled.nav`
   margin-bottom: 10px;
   width: 100%;

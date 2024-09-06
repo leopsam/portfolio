@@ -1,17 +1,21 @@
-import { Academic } from '@/Pages/Academic'
-import { Banner } from '@/Pages/Banner'
-import { Header } from '@/Pages/Header'
-import { Project } from '@/Pages/Project'
-import { Stacks } from '@/Pages/Stacks'
+import Header from '@/components/Header'
+import Project from '@/sections/project/page'
+import Banner from '@/sections/banner/page'
+import Stacks from '@/sections/stacks/page'
+import Contact from '@/sections/contact/page'
+//import Academic from '@/sections/academic/page'
+//import Experience from '@/sections/experience/page'
 
-export default function Home() {
+export default function Page() {
   return (
     <main>
       <Header />
       <Banner />
       <Project />
       <Stacks />
-      <Academic />
+      {/* <Academic />
+      <Experience />*/}
+      <Contact />
     </main>
   )
 }

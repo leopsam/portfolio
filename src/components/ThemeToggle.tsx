@@ -5,54 +5,74 @@ import { Moon, Sun } from 'lucide-react'
 
 export default function ThemeToggle() {
   const [isDarkTheme, setIsDarkTheme] = useState(false)
-  const [theme, setTheme] = useState<'light' | 'dark'>('light')
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Verifica se o localStorage está disponível
+      const storedTheme = localStorage.getItem('theme')
+      if (storedTheme) {
+        setIsDarkTheme(storedTheme === 'dark')
+        document.documentElement.setAttribute('data-theme', storedTheme)
+      }
+    }
+  }, [])
 
   useEffect(() => {
     const theme = isDarkTheme ? 'dark' : 'light'
     document.documentElement.setAttribute('data-theme', theme)
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('theme', theme)
+    }
   }, [isDarkTheme])
 
   const toggleTheme = () => {
-    setIsDarkTheme(!isDarkTheme)
-    const newTheme = theme === 'light' ? 'dark' : 'light'
-    setTheme(newTheme)
-    document.documentElement.setAttribute('data-theme', newTheme)
-    localStorage.setItem('theme', newTheme)
+    setIsDarkTheme(prevIsDarkTheme => !prevIsDarkTheme)
   }
 
   return (
-    <Rail onClick={toggleTheme}>
-      <Indicator variant={theme === 'light' ? 'dark' : 'light'}>
-        <Icon>{theme === 'light' ? <Sun /> : <Moon />}</Icon>
+    <Rail onClick={toggleTheme} aria-pressed={isDarkTheme}>
+      <Indicator $variant={isDarkTheme ? 'dark' : 'light'}>
+        <Icon>{isDarkTheme ? <Moon /> : <Sun />}</Icon>
       </Indicator>
     </Rail>
   )
 }
-interface IndicatorProps {
-  variant?: 'dark' | 'light'
-}
 
-const Rail = styled.div`
+const Rail = styled.button`
   width: 50px;
   height: 23px;
   background-color: var(--color-background);
   border-radius: 50px;
   position: relative;
   cursor: pointer;
+  border: none;
+  padding: 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: background-color 0.3s ease;
+
+  &:focus {
+    outline: 2px solid #000;
+  }
 `
-const Indicator = styled.div<IndicatorProps>`
+
+const Indicator = styled.div<{ $variant?: string }>`
   width: 23px;
   height: 23px;
-  background-color: ${props => (props.variant === 'dark' ? 'black' : 'gray')};
-  left: ${props => (props.variant === 'dark' ? 27 : 0)}px;
-  transition: 0.5s;
+  background-color: ${({ $variant }) =>
+    $variant === 'dark' ? 'black' : 'gray'};
+  position: absolute;
+  top: 0;
+  left: ${({ $variant }) => ($variant === 'dark' ? '27px' : '0')};
+  transition: left 0.3s ease;
   border-radius: 50%;
-  transform: scale(0.9);
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
 `
+
 const Icon = styled.div`
   width: 19px;
   height: 19px;
