@@ -51,6 +51,9 @@ const Rail = styled.button`
   align-items: center;
   justify-content: flex-start;
   transition: background-color 0.3s ease;
+  @media (max-width: 768px) {
+    background-color: black;
+  }
 `
 
 const Indicator = styled.div<{ $variant?: string }>`

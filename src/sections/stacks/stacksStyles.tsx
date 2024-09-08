@@ -45,6 +45,10 @@ const ContainerStacks = styled.div`
   justify-content: center;
   align-items: center;
   width: 80vw;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: 100%;
+  }
 `
 const Stack = styled.div`
   display: flex;

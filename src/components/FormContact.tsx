@@ -75,6 +75,10 @@ const Form = styled.form`
   padding: 40px;
   border-radius: 8px;
   width: 400px;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 10px;
+  }
 `
 const Label = styled.label`
   display: block;
