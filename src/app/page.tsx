@@ -3,8 +3,8 @@ import Project from '@/sections/project/page'
 import Banner from '@/sections/banner/page'
 import Stacks from '@/sections/stacks/page'
 import Contact from '@/sections/contact/page'
-//import Academic from '@/sections/academic/page'
-//import Experience from '@/sections/experience/page'
+import Academic from '@/sections/training-experience/page'
+import Footer from '@/components/Footer'
 
 export default function Page() {
   return (
@@ -13,9 +13,9 @@ export default function Page() {
       <Banner />
       <Project />
       <Stacks />
-      {/* <Academic />
-      <Experience />*/}
+      <Academic />
       <Contact />
+      <Footer />
     </main>
   )
 }

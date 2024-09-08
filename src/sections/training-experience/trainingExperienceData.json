@@ -1,0 +1,137 @@
+[
+  {
+    "type": "education",
+    "title": "Driven Education",
+    "subtitle": "Software Engineer, Formação Dev Full Stack Completo",
+    "date": "set de 2022 - jul de 2023",
+    "link": "https://www.driven.com.br/",
+    "description": "Formação intensiva de +1.000h focadas em projetos práticos. +25 projetos práticos nas tecnologias: HTML, CSS, Javascript (React, Node.js, Typescript e Prisma). Fundamentos da engenharia de software: lógica de programação, algoritmos, estrutura de dados, orientação a objetos, arquitetura, otimização, performance e clean code. Bancos de dados relacionais e não relacionais com Postgres, Mongo e Redis. Princípios de DevOps com GitHub Actions, Docker e AWS. Testes unitários, integração e ponta a ponta com Jest, SuperTest e Cypress. Trabalhos em equipe usando metodologias ágeis (Scrum), Git, Slack, Trello, Zoom, colaborando, dando e recebendo feedbacks. Desenvolvimento de competências comportamentais e habilidades profissionais (soft skills). Formação intensiva de +1.000h focadas em projetos práticos.",
+    "skills": [
+      "vercel",
+      "Desenvolvimento de back-end",
+      "Redis",
+      "CSS",
+      "PeopleSoft",
+      "TypeScript",
+      "Prisma",
+      "Programação orientada a objetos (POO)",
+      "SQL",
+      "Desenvolvimento full stack",
+      "MongoDB",
+      "Competências interpessoais",
+      "Programação (computação)",
+      "JavaScript",
+      "Express.js",
+      "Docker",
+      "PostgreSQL",
+      "NestJS",
+      "HTML5",
+      "Node.js"
+    ]
+  },
+  {
+    "type": "education",
+    "title": "Faculdade Venda Nova do Imigrante – FAVENI",
+    "subtitle": "Pós-graduação Lato Sensu, Segurança da Informação",
+    "date": "mar de 2021 - set de 2022",
+    "link": "https://faveni.edu.br/",
+    "description": "A segurança da informação está diretamente relacionada com proteção de um conjunto de informações, no sentido de preservar o valor que possuem para um indivíduo ou uma organização. São propriedades básicas da segurança da informação: confidencialidade, integridade, disponibilidade, autenticidade e legalidade.",
+    "skills": [
+      "Gestão de Segurança da Informação",
+      "Proteção de Dados e Privacidade",
+      "Criptografia",
+      "Análise de Vulnerabilidades e Gestão de Incidentes",
+      "Segurança de Redes",
+      "Governança, Risco e Conformidade (GRC)",
+      "Segurança de Aplicações e Desenvolvimento Seguro",
+      "Forense Digital",
+      "Gestão de Continuidade de Negócios e Recuperação de Desastres",
+      "Educação e Conscientização em Segurança"
+    ]
+  },
+  {
+    "type": "education",
+    "title": "Alura",
+    "subtitle": "Curso Técnico Integrado, Programação de Computadores - Geral",
+    "date": "mai de 2022 - mai de 2025",
+    "link": "https://www.alura.com.br/",
+    "description": "A Alura é um ambiente completo para você estudar os mais variados temas relacionados à tecnologia, com um acervo de linguagem de programação vasta.",
+    "skills": [
+      "Styled-components",
+      "vercel",
+      "Bootstrap",
+      "Next.js",
+      "Desenvolvimento de back-end",
+      "Redis",
+      "CSS",
+      "TypeScript",
+      "Prisma",
+      "Programação orientada a objetos (POO)",
+      "SQL",
+      "MongoDB",
+      "Programação (computação)",
+      "JavaScript",
+      "Express.js",
+      "PostgreSQL",
+      "HTML5",
+      "Node.js"
+    ]
+  },
+  {
+    "type": "education",
+    "title": "Pontifícia Universidade Católica de Minas Gerais",
+    "subtitle": "Pós-graduação Lato Sensu, Engenharia de Software",
+    "date": "fev de 2016 - mai de 2017",
+    "link": "https://www.pucminas.br/",
+    "description": "Pós-Graduação Incompleta Tecnologia da Informação, TI. Titulo: Engenharia de Software . Universidade Católica de Minas Gerais, PUC Minas Virtual, Brasil. --Incompleto--"
+  },
+  {
+    "type": "education",
+    "title": "Associação Brasileira de Ensino Universitário Abeu – UNIABEU",
+    "subtitle": "Graduação, Técnico em Análise e Desenvolvimento de Sistema, TADS",
+    "date": "fev de 2013 - jun de 2016",
+    "link": "https://uniabeu.edu.br/",
+    "description": "O analista e desenvolvedor de sistemas é o profissional responsável por desenvolver, projetar, analisar, implementar e realizar a manutenção de sistemas de informação de diversos setores. Sistemas de informação são aqueles responsáveis por gerir, organizar e manipular informações e dados pertinentes a um setor específico ou mesmo a uma empresa inteira.",
+    "skills": [
+      "Desenvolvimento de Software",
+      "Análise de Sistemas",
+      "Banco de Dados",
+      "Testes e Qualidade de Software",
+      "Segurança de Redes",
+      "Segurança da Informação",
+      "Gestão de Projetos de TI",
+      "Infraestrutura e Redes de Computadores",
+      "Interface de Usuário (UI) e Experiência de Usuário (UX)",
+      "Manutenção e Suporte a Sistemas",
+      "Inovação e Adaptação Tecnológica"
+    ]
+  },
+  {
+    "type": "experience",
+    "title": "Desenvolvedor full stack (Driven.t)",
+    "subtitle": "Projetos Driven · Freelance",
+    "date": "abr de 2023 - mai de 2023 · 2 meses",
+    "description": "O Driven.t é um poderoso gerenciador de eventos para eventos únicos. Ele permite que os usuários se cadastrem, escolham o tipo de ingresso (presencial ou online) e efetuem o pagamento. Para ingressos presenciais, os usuários também podem selecionar acomodação em hotéis cadastrados. O sistema oferece uma seleção de atividades disponíveis durante o evento, com restrições de horário e capacidade. Ele garante uma experiência conveniente e intuitiva para os usuários, facilitando o gerenciamento completo do evento. Desenvolvi o projeto Driven.t durante 3 sprints num time com 4 desenvolvedores, seguindo a metodologia ágil como dailys e scrum; Desenvolvi um sistema intuitivo de seleção de tipos de ingresso, onde o usuário escolhe entre presencial com ou sem hotel, ou online, com seus respectivos preços; Desenvolvi o cadastro de cartão de crédito, utilizando a biblioteca react-credit-cards e styled-components para os estilos dos inputs; Desenvolvi a tela de resumo do hotel e quarto escolhido; Desenvolvi a função que permite o usuário se inscrever na tarefa caso exista vagas disponíveis, e se não existir vagas apresenta a mensagem de Esgotado; Tecnologias utilizadas: React, Node.js, Axios, Material UI, Express, Jest, Typescript, Javascript, styled-components, react-router-dom, dayjs, Prisma, bcrypt, Redis, PostgreSQL e jsonwebtoken; Repositório Back-end: https://github.com/Drivent-Projeto/drivent-backend Repositório Front-end: https://github.com/Drivent-Projeto/drivent-frontend"
+  },
+  {
+    "type": "experience",
+    "title": "Desenvolvedor full stack (LagGames)",
+    "subtitle": "Projetos Driven · Freelance",
+    "date": "jan de 2023 - fev de 2023 · 2 meses",
+    "description": "Desenvolvi o projeto LagGames num time com outros 2 desenvolvedores, seguindo a metodologia ágil como dailys e scrum. Desenvolvi um sistema intuitivo de e-commerce onde pode ser comprar jogos digitais. Utilizei o Trello para me organizar e criar tarefas atômicas, com essa abordagem, pude ter uma visão clara de todas as etapas do projeto e garantir que cada tarefa fosse concluída de forma eficiente. Tecnologias utilizadas: React, Node.js, Express, Javascript, styled-components, react-router-dom, bcrypt e MongoDB. Repositório Back-end: https://github.com/gsdutra/projeto15-laggames-back Repositório Front-end: https://github.com/gsdutra/projeto15-laggames-front"
+  },
+  {
+    "type": "experience",
+    "title": "Prestador de serviços para o Grupo Saint Gobain, pela Vigban",
+    "subtitle": "Saint-Gobain Brasil · Tempo integral",
+    "date": "jan de 2020 - nov de 2022 · 2 anos 11 meses",
+    "description": "Na empresa Saint Gobain, trabalhei como responsável por requisições no sistema SAP. Mantive contato com fornecedores e adquiri habilidades em gerenciamento de estoque e cadeia de suprimentos. Desenvolvi conhecimento em SAP e aprimorei habilidades de organização e comunicação."
+  },
+  {
+    "type": "experience",
+    "title": "Instructor de cursos",
+    "subtitle": "Cedaspy",
+    "date": "fev de 2018 - nov de 2019 · 1 ano 10 meses",
+    "description": "Na empresa Cedaspy, atuei como professor de informática, responsável pela arquitetura de rede e soluções do sistema integrado. Também assumi o papel de coordenador interino, coordenando equipes e garantindo o bom funcionamento das operações. Durante minha experiência, ministrei aulas abrangendo desenvolvimento de documentos, design gráfico, plataforma web, desenvolvimento de software e tópicos de TI. Desenvolvi habilidades de liderança, comunicação e gestão de equipes."
+  }
+]

@@ -5,6 +5,8 @@ const BodyStacks = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--color-section);
+  padding-bottom: 70px;
 `
 const TopSections = styled.div`
   margin: 80px 25px 50px;

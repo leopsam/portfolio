@@ -1,97 +1,35 @@
-'use client'
-import React, { useState } from 'react'
-import {
-  BodyContact,
-  TopSections,
-  TitlePage,
-  Line,
-  Form,
-  Label,
-  Input,
-  Textarea,
-  Button,
-} from './contactStyles'
+import FormContact from '@/components/FormContact'
+import { BodyContact, ContainerItens, TopSections, Line } from './contactStyles'
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  })
-  const phoneNumber = '5511999999999'
-  const message = `
-  - Nome: ${formData.name}, 
-  - Email:${formData.email}, 
-  Ola Leonardo, ${formData.message}, 
-  `
-  const encodedMessage = encodeURIComponent(message)
-  const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
-
-  function handleSubmit(event: React.FormEvent) {
-    event.preventDefault()
-    console.log('handleSubmit called')
-    console.log('URL:', url)
-
-    window.open(url, '_blank')
-  }
-
-  function handleInputChange(
-    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) {
-    const { name, value } = event.target
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value,
-    }))
-  }
-
   return (
-    <BodyContact>
-      <TopSections>
-        <TitlePage>
+    <BodyContact id="contact">
+      <ContainerItens>
+        <TopSections>
+          <h1>Entre em contato</h1>
           <Line />
-          <h1>Contato</h1>
-          <Line />
-        </TitlePage>
-      </TopSections>
+          <p>
+            Gostaria de trocar ideias, iniciar um projeto ou simplesmente
+            conversar?
+          </p>
+          <p>
+            Estou sempre em busca de novas oportunidades, desafios e
+            colaborações. Se você tem uma ideia, uma pergunta ou precisa de
+            ajuda com algo, ficarei muito feliz em ouvir você! Não importa se é
+            uma proposta formal ou apenas uma curiosidade, estou aqui para
+            ajudar e explorar novas possibilidades.
+          </p>
+          <p>
+            Minha caixa de entrada está aberta para discutir projetos,
+            compartilhar conhecimentos ou até mesmo para bater um papo sobre
+            tecnologia e inovação. Preencha o formulário abaixo com seus dados e
+            uma breve mensagem sobre o que você gostaria de conversar, e
+            entrarei em contato o mais rápido possível.
+          </p>
+        </TopSections>
 
-      <Form onSubmit={handleSubmit}>
-        <div>
-          <Label htmlFor="name">Name:</Label>
-          <Input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
-            required
-          />
-        </div>
-        <div>
-          <Label htmlFor="email">Email:</Label>
-          <Input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleInputChange}
-            required
-          />
-        </div>
-        <div>
-          <Label htmlFor="message">Message:</Label>
-          <Textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleInputChange}
-            required
-          />
-        </div>
-        <Button type="button" onClick={handleSubmit}>
-          Enviar mensagem
-        </Button>
-      </Form>
+        <FormContact />
+      </ContainerItens>
     </BodyContact>
   )
 }

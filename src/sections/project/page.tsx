@@ -1,9 +1,5 @@
 import Image from 'next/image'
-import siteone from './../../../public/images/siteone.png'
-import sitetwo from './../../../public/images/sitetwo.jpg'
-import sitetree from './../../../public/images/sitetree.png'
-import sitefour from './../../../public/images/sitefour.png'
-import sitefive from './../../../public/images/sitefive.jpg'
+import siteone from './../../../public/images/banner.jpg'
 import { Github, MonitorSmartphone } from 'lucide-react'
 import {
   BodyProject,
@@ -46,94 +42,6 @@ export default function Project() {
         <BodyCardsProject>
           <CardProject>
             <Image src={siteone} alt="Imagem ilustrativa do projeto" />
-            <ContainerDescription>
-              <h2>Titulo do projeto</h2>
-              <p>
-                Descrição do projeto maneiro que vamos olhar depois para ficar
-                melhor do github, vou olhar todos eles Descrição do projeto
-                maneiro que vamos olhar depois para ficar melhor do github vou.
-              </p>
-              <ContainerSkill>
-                <h3>Habilidades: React, JavaScript, SASS, html</h3>
-              </ContainerSkill>
-              <ContainerLink>
-                <Icon href="/">
-                  <Github /> Repositório
-                </Icon>
-                <Icon href="/">
-                  <MonitorSmartphone /> {` `}Deploy
-                </Icon>
-              </ContainerLink>
-            </ContainerDescription>
-          </CardProject>
-          <CardProject>
-            <Image src={sitetwo} alt="Imagem ilustrativa do projeto" />
-            <ContainerDescription>
-              <h2>Titulo do projeto</h2>
-              <p>
-                Descrição do projeto maneiro que vamos olhar depois para ficar
-                melhor do github, vou olhar todos eles Descrição do projeto
-                maneiro que vamos olhar depois para ficar melhor do github vou.
-              </p>
-              <ContainerSkill>
-                <h3>Habilidades: React, JavaScript, SASS, html</h3>
-              </ContainerSkill>
-              <ContainerLink>
-                <Icon href="/">
-                  <Github /> Repositório
-                </Icon>
-                <Icon href="/">
-                  <MonitorSmartphone /> {` `}Deploy
-                </Icon>
-              </ContainerLink>
-            </ContainerDescription>
-          </CardProject>
-          <CardProject>
-            <Image src={sitetree} alt="Imagem ilustrativa do projeto" />
-            <ContainerDescription>
-              <h2>Titulo do projeto</h2>
-              <p>
-                Descrição do projeto maneiro que vamos olhar depois para ficar
-                melhor do github, vou olhar todos eles Descrição do projeto
-                maneiro que vamos olhar depois para ficar melhor do github vou.
-              </p>
-              <ContainerSkill>
-                <h3>Habilidades: React, JavaScript, SASS, html</h3>
-              </ContainerSkill>
-              <ContainerLink>
-                <Icon href="/">
-                  <Github /> Repositório
-                </Icon>
-                <Icon href="/">
-                  <MonitorSmartphone /> {` `}Deploy
-                </Icon>
-              </ContainerLink>
-            </ContainerDescription>
-          </CardProject>
-          <CardProject>
-            <Image src={sitefour} alt="Imagem ilustrativa do projeto" />
-            <ContainerDescription>
-              <h2>Titulo do projeto</h2>
-              <p>
-                Descrição do projeto maneiro que vamos olhar depois para ficar
-                melhor do github, vou olhar todos eles Descrição do projeto
-                maneiro que vamos olhar depois para ficar melhor do github vou.
-              </p>
-              <ContainerSkill>
-                <h3>Habilidades: React, JavaScript, SASS, html</h3>
-              </ContainerSkill>
-              <ContainerLink>
-                <Icon href="/">
-                  <Github /> Repositório
-                </Icon>
-                <Icon href="/">
-                  <MonitorSmartphone /> {` `}Deploy
-                </Icon>
-              </ContainerLink>
-            </ContainerDescription>
-          </CardProject>
-          <CardProject>
-            <Image src={sitefive} alt="Imagem ilustrativa do projeto" />
             <ContainerDescription>
               <h2>Titulo do projeto</h2>
               <p>

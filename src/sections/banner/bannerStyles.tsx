@@ -3,11 +3,31 @@ import Link from 'next/link'
 import styled from 'styled-components'
 
 const BodyBanner = styled.div`
+  background-image: url('./images/banner.jpg');
+  background-size: cover;
+  background-position: center;
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  * {
+    position: relative;
+    z-index: 2;
+  }
   img {
     height: 80vh;
     width: 35vw;
@@ -17,8 +37,9 @@ const BodyBanner = styled.div`
   }
 `
 const Container = styled.div`
-  width: calc(100% / 2);
-  padding: 50px;
+  color: var(--color-white);
+  width: calc(90% / 2);
+  padding: 10px;
   h1 {
     font-size: 48px;
     line-height: 1.2;
@@ -28,92 +49,17 @@ const Container = styled.div`
     font-size: 24px;
     margin-top: 10px;
   }
-  span {
-    position: relative;
-  }
-  span::before {
-    content: '';
-    color: var(--color-theme);
-    animation: words 20s infinite;
-  }
-  span::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    border-left: 2px solid var(--color-theme);
-    right: -10px;
-    animation:
-      cursor 0.7s infinite,
-      typing 20s steps(15) infinite;
-    width: calc(100% + 15px);
-    background-color: var(--color-background);
-    transition: background-color 0.5s ease;
-  }
-  @keyframes typing {
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90%,
-    95% {
-      width: 0;
-    }
-    5%,
-    20%,
-    25%,
-    40%,
-    45%,
-    60%,
-    65%,
-    80%,
-    85% {
-      width: calc(100% + 15px);
-    }
-  }
-
-  @keyframes cursor {
-    0% {
-      border-left: 2px solid var(--color-background);
-    }
-  }
-
-  @keyframes words {
-    0%,
-    20% {
-      content: '<Programador />';
-    }
-    21%,
-    40% {
-      content: '<Pai />';
-    }
-    41%,
-    60% {
-      content: '<Marido />';
-    }
-    61%,
-    80% {
-      content: '<Gamer />';
-    }
-    81%,
-    100% {
-      content: '<Desenvolvedor Full Stack />';
-    }
-  }
   p {
     font-size: 14px;
     margin: 20px 0 30px;
     line-height: 1.6;
-    color: var(--color-text-secondary);
+    color: var(--color-gray);
   }
 `
 const StyledLinkPdf = styled(Link)`
   padding: 20px;
   border-radius: 40px;
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 14px;
   text-decoration: none;
   background-color: var(--color-theme);
@@ -123,14 +69,14 @@ const StyledLinkPdf = styled(Link)`
   }
   &:active {
     background-color: var(--color-theme);
-    color: black;
+    color: var(--color-black);
   }
 `
 const Social = styled.div`
   margin-top: 20px;
   height: 60px;
   width: 550px;
-  color: #ffffff;
+  color: var(--color-white);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -142,7 +88,7 @@ const Icon = styled(Link)`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: var(--color-text-primary);
+  color: var(--color-white);
   &:hover {
     color: var(--color-theme);
     cursor: pointer;

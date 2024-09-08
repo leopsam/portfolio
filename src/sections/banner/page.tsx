@@ -8,6 +8,7 @@ import {
   Container,
   StyledLinkPdf,
 } from './bannerStyles'
+import EraseWrite from '@/components/EraseWrite'
 
 export default function Banner() {
   return (
@@ -15,7 +16,7 @@ export default function Banner() {
       <Container>
         <h1>Oi, sou o Leonardo</h1>
         <h2>
-          <span></span>
+          <EraseWrite />
         </h2>
         <p>
           Um desenvolvedor apaixonado por tecnologia e inovação. Adoro criar
@@ -29,11 +30,9 @@ export default function Banner() {
           valorizo muito a colaboração em equipe e o compartilhamento de
           conhecimento.
         </p>
-
         <StyledLinkPdf href="/pdf/cv.pdf" target="_blank" passHref>
           Curriculun Vitae pdf
         </StyledLinkPdf>
-
         <Social>
           <Icon
             href="https://www.linkedin.com/in/leonardo-pereira-sampaio/"

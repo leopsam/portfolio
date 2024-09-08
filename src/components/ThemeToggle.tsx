@@ -4,11 +4,10 @@ import React, { useEffect, useState } from 'react'
 import { Moon, Sun } from 'lucide-react'
 
 export default function ThemeToggle() {
-  const [isDarkTheme, setIsDarkTheme] = useState(false)
+  const [isDarkTheme, setIsDarkTheme] = useState(true)
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      // Verifica se o localStorage está disponível
       const storedTheme = localStorage.getItem('theme')
       if (storedTheme) {
         setIsDarkTheme(storedTheme === 'dark')
@@ -52,10 +51,6 @@ const Rail = styled.button`
   align-items: center;
   justify-content: flex-start;
   transition: background-color 0.3s ease;
-
-  &:focus {
-    outline: 2px solid #000;
-  }
 `
 
 const Indicator = styled.div<{ $variant?: string }>`
@@ -79,5 +74,5 @@ const Icon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: var(--color-white);
 `
