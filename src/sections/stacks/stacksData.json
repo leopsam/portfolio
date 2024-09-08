@@ -1,0 +1,157 @@
+[
+  {
+    "src": "portifolio/wghzbdpdopjcebr4ykt2",
+    "alt": "imagem html",
+    "title": "HTML"
+  },
+  {
+    "src": "portifolio/rt2oqvz3dvtbo2gnwafh",
+    "alt": "imagem css",
+    "title": "CSS"
+  },
+  {
+    "src": "portifolio/r2pc2ywputxsiel803cb",
+    "alt": "imagem javascript",
+    "title": "JavaScript"
+  },
+  {
+    "src": "portifolio/jejvzeqqjvxq4k23skpl",
+    "alt": "imagem typescript",
+    "title": "TypeScript"
+  },
+  {
+    "src": "portifolio/ooqjawwleghg1onjtsrc",
+    "alt": "imagem nodejs",
+    "title": "NodeJs"
+  },
+  {
+    "src": "portifolio/eu9fke1r0n2ilrfqkygj",
+    "alt": "imagem prisma",
+    "title": "Prisma"
+  },
+  {
+    "src": "portifolio/izrk5fwfd6nefzavfrjr",
+    "alt": "imagem figma",
+    "title": "Figma"
+  },
+  {
+    "src": "portifolio/cb8mp4yv4ambuvp14h1o",
+    "alt": "imagem jest",
+    "title": "Jest"
+  },
+  {
+    "src": "portifolio/dhqxez33r1lzn83poebp",
+    "alt": "imagem react",
+    "title": "React"
+  },
+  {
+    "src": "portifolio/yxvryvsckrscrkqd4dzr",
+    "alt": "imagem express",
+    "title": "Express"
+  },
+  {
+    "src": "portifolio/sbee44b8rmsxaqhjcfmy",
+    "alt": "imagem mongo",
+    "title": "MongoDB"
+  },
+  {
+    "src": "portifolio/toxwrgpybhqkoof3n9ly",
+    "alt": "imagem postgres",
+    "title": "Postgres"
+  },
+  {
+    "src": "portifolio/xjbboor7ef1qwbqnaj0f",
+    "alt": "imagem docker",
+    "title": "Docker"
+  },
+  {
+    "src": "portifolio/tgdyodjotumvrrwbb2gs",
+    "alt": "imagem aws",
+    "title": "AWS"
+  },
+  {
+    "src": "portifolio/apyu69ivmvwtylkw69mo",
+    "alt": "imagem cicd",
+    "title": "CI/CD"
+  },
+  {
+    "src": "portifolio/c4ek1acsmu0zaevo4olm",
+    "alt": "imagem carregou",
+    "title": "NestJs"
+  },
+  {
+    "src": "portifolio/otsq8z1dvgw8vhohzpuq",
+    "alt": "imagem microservicos",
+    "title": "Microserviços"
+  },
+  {
+    "src": "portifolio/czuthcz9jqrdrfxeiqwc",
+    "alt": "imagem jquery",
+    "title": "Jquery"
+  },
+  {
+    "src": "portifolio/k67ibjarq6hfg3ewgyrv",
+    "alt": "imagem bootstrap",
+    "title": "Bootstrap"
+  },
+  {
+    "src": "portifolio/e4apakkfhzgxoi4qpfe7",
+    "alt": "imagem angular",
+    "title": "Angular"
+  },
+  {
+    "src": "portifolio/hh0avksqzbnzzodpwgnh",
+    "alt": "imagem mysql",
+    "title": "Mysql"
+  },
+  {
+    "src": "portifolio/uwff7uqo0afnetnhy5lo",
+    "alt": "imagem vite",
+    "title": "Vite"
+  },
+  {
+    "src": "portifolio/eymn5d1voq6mtnncphl9",
+    "alt": "imagem Vue",
+    "title": "Vue.js"
+  },
+  {
+    "src": "portifolio/cuf1ygwsftvmna7hoqia",
+    "alt": "imagem git",
+    "title": "Git"
+  },
+  {
+    "src": "portifolio/tc15xmzkczia5fz5n21m",
+    "alt": "imagem github",
+    "title": "GitHub"
+  },
+  {
+    "src": "portifolio/b9kfhtqosvip9z0yfpqz",
+    "alt": "imagem npm",
+    "title": "npm"
+  },
+  {
+    "src": "portifolio/iciktwkqqxsxunuuw9w0",
+    "alt": "imagem nginx",
+    "title": "Nginx"
+  },
+  {
+    "src": "portifolio/ygz900ciqqwy02z3hg4e",
+    "alt": "imagem tailwindcss",
+    "title": "Tailwindcss"
+  },
+  {
+    "src": "portifolio/ehxnknvbcbd6bsk0ku1g",
+    "alt": "imagem graficoql",
+    "title": "GraphQL"
+  },
+  {
+    "src": "portifolio/joczmab1mp7xa56agkep",
+    "alt": "imagem nextjs",
+    "title": "NextJs"
+  },
+  {
+    "src": "portifolio/pjdjfouzq8uzqd4ar64o",
+    "alt": "imagem sqlite",
+    "title": "SQLite"
+  }
+]

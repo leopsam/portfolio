@@ -1,0 +1,40 @@
+[
+  {
+    "image": {
+      "src": "https://res.cloudinary.com/dqgjhgn3s/image/upload/v1722664947/vp6binlbytg6w80sto67.jpg",
+      "alt": "Imagem ilustrativa do projeto 1"
+    },
+    "description": {
+      "title": "Projeto Maneiro 1",
+      "text": "Descrição do projeto maneiro que vamos olhar depois para ficar melhor do github, vou olhar todos eles Descrição do projeto maneiro que vamos olhar depois para ficar melhor do github vou."
+    },
+    "skills": "React, JavaScript, SASS, HTML",
+    "links": {
+      "repository": {
+        "href": "https://github.com/leopsam/nostalgia-app-front-end/blob/main/src/components/MediaPicker.tsx"
+      },
+      "deploy": {
+        "href": "https://github.com/leopsam/nostalgia-app-front-end/blob/main/src/components/MediaPicker.tsx"
+      }
+    }
+  },
+  {
+    "image": {
+      "src": "https://res.cloudinary.com/dqgjhgn3s/image/upload/v1722664947/vp6binlbytg6w80sto67.jpg",
+      "alt": "Imagem ilustrativa do projeto 2"
+    },
+    "description": {
+      "title": "Projeto Maneiro 2",
+      "text": "Descrição do projeto maneiro que vamos olhar depois para ficar melhor do github, vou olhar todos eles Descrição do projeto maneiro que vamos olhar depois para ficar melhor do github vou."
+    },
+    "skills": "Vue.js, TypeScript, CSS, HTML",
+    "links": {
+      "repository": {
+        "href": "https://github.com/leopsam/nostalgia-app-front-end/blob/main/src/components/MediaPicker.tsx"
+      },
+      "deploy": {
+        "href": "https://github.com/leopsam/nostalgia-app-front-end/blob/main/src/components/MediaPicker.tsx"
+      }
+    }
+  }
+]

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import siteone from './../../../public/images/banner.jpg'
+import data from './projectData.json'
 import { Github, MonitorSmartphone } from 'lucide-react'
 import {
   BodyProject,
@@ -40,28 +40,31 @@ export default function Project() {
           </p>
         </TopSections>
         <BodyCardsProject>
-          <CardProject>
-            <Image src={siteone} alt="Imagem ilustrativa do projeto" />
-            <ContainerDescription>
-              <h2>Titulo do projeto</h2>
-              <p>
-                Descrição do projeto maneiro que vamos olhar depois para ficar
-                melhor do github, vou olhar todos eles Descrição do projeto
-                maneiro que vamos olhar depois para ficar melhor do github vou.
-              </p>
-              <ContainerSkill>
-                <h3>Habilidades: React, JavaScript, SASS, html</h3>
-              </ContainerSkill>
-              <ContainerLink>
-                <Icon href="/">
-                  <Github /> Repositório
-                </Icon>
-                <Icon href="/">
-                  <MonitorSmartphone /> {` `}Deploy
-                </Icon>
-              </ContainerLink>
-            </ContainerDescription>
-          </CardProject>
+          {data.map((project, index) => (
+            <CardProject key={index}>
+              <Image
+                src={project.image.src}
+                alt={project.image.alt}
+                width={800}
+                height={600}
+              />
+              <ContainerDescription>
+                <h2>{project.description.title}</h2>
+                <p>{project.description.text}</p>
+                <ContainerSkill>
+                  <h3>Habilidades: {project.skills}</h3>
+                </ContainerSkill>
+                <ContainerLink>
+                  <Icon href={project.links.repository.href}>
+                    <Github /> Repositório
+                  </Icon>
+                  <Icon href={project.links.deploy.href}>
+                    <MonitorSmartphone /> Deploy
+                  </Icon>
+                </ContainerLink>
+              </ContainerDescription>
+            </CardProject>
+          ))}
         </BodyCardsProject>
       </BodyProject>
     </main>
